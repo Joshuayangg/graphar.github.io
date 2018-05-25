@@ -99,11 +99,14 @@
                           <label for="exampleInputEmail2">Email</label>
                           <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
                         </div>
+                        <div class="form-group">
+                          <label for="exampleSubject">Subject</label>
+                          <input type="text" class="form-control" id="subject" placeholder="Subject">
                         <div class="form-group ">
                           <label for="exampleInputText">Your Message</label>
-                         <textarea  class="form-control" placeholder="Description"></textarea> 
+                         <textarea  class="form-control" placeholder="Description" id="message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-default">Send Message</button>
+                        <button onclick="sendMail()" type="reset" class="btn btn-default">Send Message</button>
                       </form>
                     </div>
                   </div>
@@ -111,6 +114,21 @@
             </div>
 </footer>
 
+
+<script>
+function sendMail() {
+  var link = "mailto:joshua.yang@berkeley.edu"
+           + "?cc=myCCaddress@example.com"
+           + "&subject=" + escape(document.getElementById("subject").value)
+           + "&body=" + escape(document.getElementById("message").value)
+  ;
+  console.log(link);
+  console.log(window.location.href);
+  window.location.href = link;
+  console.log(window.location.href);
+
+}
+</script>
 
 <!--- iOS Landing Page Fix
 <section>
