@@ -20,11 +20,11 @@ a img {
 }
 
 .navbar-default .navbar-nav li a {
-	color:rgb(160, 158, 158);
+	color:rgb(194, 194, 194);
 }
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
-	color: rgb(202, 199, 199);
+	color: rgb(221, 219, 219);
 }
 
 #home {
@@ -61,6 +61,10 @@ div h1 {
 
 #about-contents {
 	text-align: center;
+}
+
+.img-responsive {
+	vertical-align: middle;
 }
 
 .padding {
