@@ -34,6 +34,7 @@ a img {
 	position: relative;
 	width: 100%;
 	background-size: cover;
+  padding-top: 55px;
 }
 
 .col-sm-6 img {
@@ -152,4 +153,3 @@ figure {
 	will-change: transform;
 }
 --*/
-
